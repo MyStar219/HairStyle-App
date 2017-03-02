@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#90000000" >
+
+    <ImageButton
+        android:id="@+id/btnImgCloseColorLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/close_button"
+        android:src="@drawable/close_button" />
+
+    <Button
+        android:id="@+id/btnReset"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:visibility="invisible"
+        android:text="Reset" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnReset"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <TextView
+            android:id="@+id/txtColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Color "
+            android:textColor="@android:color/white" />
+
+        <SeekBar
+            android:id="@+id/seekBar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:max="255"
+            android:maxHeight="8dp"
+            android:minHeight="8dp"
+            android:progress="128"
+            android:progressDrawable="@drawable/red_seekbar"
+            android:thumb="@drawable/seek_bar_hanlder"
+            android:thumbOffset="12px" />
+
+        <SeekBar
+            android:id="@+id/seekBar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:max="255"
+            android:maxHeight="8dp"
+            android:minHeight="8dp"
+            android:progress="128"
+            android:progressDrawable="@drawable/green_seekbar"
+            android:thumb="@drawable/seek_bar_hanlder"
+            android:thumbOffset="12px" />
+
+        <SeekBar
+            android:id="@+id/seekBar3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="255"
+            android:maxHeight="8dp"
+            android:minHeight="8dp"
+            android:progress="128"
+            android:progressDrawable="@drawable/bule_seekbar"
+            android:thumb="@drawable/seek_bar_hanlder"
+            android:thumbOffset="12px" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:text="Saturation"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+      
+
+        <TextView
+            android:id="@+id/textviewBrightness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brightness"
+            android:textColor="@android:color/white" />
+
+        <SeekBar
+            android:id="@+id/seekBarRed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="200"
+            android:maxHeight="8dip"
+            android:minHeight="8dip"
+            android:progress="100"
+            android:progressDrawable="@drawable/brightness_seek_bar"
+            android:thumb="@drawable/seek_bar_hanlder" />
+
+        <TextView
+            android:id="@+id/textViewContrast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contrast"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+        <SeekBar
+            android:id="@+id/seekBarBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="10"
+            android:maxHeight="8dip"
+            android:minHeight="8dip"
+            android:progress="5"
+            android:progressDrawable="@drawable/brightness_seek_bar"
+            android:thumb="@drawable/seek_bar_hanlder"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

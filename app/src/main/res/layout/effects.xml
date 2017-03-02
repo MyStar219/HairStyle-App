@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#20000000">
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+
+        android:layout_height="50dp"
+        android:background="@drawable/bottom_tool_bg" >
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"
+            android:layout_marginLeft="8dp"/>
+
+        <ImageView
+            android:id="@+id/ivSave"
+            android:layout_width="25dp"
+            android:background="@drawable/back_button"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/menu_two" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Effects"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/title"
+        android:layout_centerVertical="true"
+   android:layout_above="@+id/hlvCustomList"
+        android:id="@+id/middleview"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageview"/>
+
+    </FrameLayout>
+    <com.meetme.android.horizontallistview.HorizontalListView
+        android:id="@+id/hlvCustomList"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+android:visibility = "visible"
+ />
+
+
+
+
+</RelativeLayout>

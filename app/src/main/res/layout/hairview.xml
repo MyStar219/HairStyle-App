@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#20000000">
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+
+        android:layout_height="50dp"
+        android:background="@drawable/bottom_tool_bg" >
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"
+            android:layout_marginLeft="8dp"/>
+
+        <ImageView
+            android:id="@+id/ivSave"
+            android:layout_width="25dp"
+            android:background="@drawable/back_button"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/menu_two" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="EDIT"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:id="@+id/bottom_bar"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff" >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tvBG"
+            android:background="@drawable/back_button"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+
+                android:id="@+id/grid_frame2"
+
+                android:src="@drawable/hair"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gridtext2"
+                android:textColor="@android:color/black"
+
+                android:text="Hair"
+
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tvStick"
+            android:visibility="visible"
+            android:orientation="vertical"
+            android:background="@drawable/back_button"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+
+                android:id="@+id/stick_frame"
+
+                android:src="@drawable/mustache"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sticktext"
+                android:textColor="@android:color/black"
+
+                android:text="Mustache"
+
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tvRotate"
+            android:background="@drawable/back_button"
+            android:visibility="visible"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+
+                android:id="@+id/rotate"
+
+                android:src="@drawable/rotate"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rotatetext"
+                android:textColor="@android:color/black"
+
+                android:text="Rotate"
+
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tvReset"
+            android:background="@drawable/back_button"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+
+                android:id="@+id/reset"
+
+                android:src="@drawable/reset"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/resettext"
+                android:textColor="@android:color/black"
+
+                android:text="Reset"
+
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+        </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/title"
+        android:layout_centerVertical="true"
+   android:layout_above="@+id/hlvCustomList"
+        android:id="@+id/middleview"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageview"/>
+
+    </FrameLayout>
+    <com.meetme.android.horizontallistview.HorizontalListView
+        android:id="@+id/hlvCustomList"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+android:visibility = "invisible"
+ />
+
+    <TextView
+        android:id="@+id/ivRemoveSticker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="5dp"
+        android:drawableRight="@drawable/remove_sticker"
+        android:gravity="center_vertical"
+        android:text="Remove"
+
+        android:textColor="@android:color/white" />
+    <TextView
+        android:id="@+id/ivRemoveHair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="5dp"
+        android:drawableRight="@drawable/remove_sticker"
+        android:gravity="center_vertical"
+        android:text="Remove"
+
+        android:textColor="@android:color/white" />
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/color_picker"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/color_pickerone"
+
+            android:visibility="gone">
+        <include layout="@layout/color_layout"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/color_pickertwo"
+            android:visibility="gone">
+
+        <include layout="@layout/color_layoutone"/>
+</LinearLayout>
+    </FrameLayout>
+
+
+
+</RelativeLayout>
